@@ -32,6 +32,7 @@ ffmpegthumbnailer
 fontconfig
 fzf
 ghostty
+gazelle-tui
 github-cli
 gnome-calculator
 gnome-keyring
@@ -49,7 +50,6 @@ hyprlock
 hyprpicker
 hyprsunset
 imagemagick
-impala
 imv
 inetutils
 inxi
