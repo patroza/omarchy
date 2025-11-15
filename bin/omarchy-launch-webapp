@@ -5,8 +5,8 @@
 browser=$(xdg-settings get default-web-browser)
 
 case $browser in
-google-chrome* | brave-browser* | microsoft-edge* | opera* | vivaldi* | helium*) ;;
-*) browser="microsoft-edge.desktop" ;;
+google-chrome* | brave-browser* | microsoft-edge* | multi-browser* | opera* | vivaldi* | helium*) ;;
+*) browser="chromium.desktop" ;;
 esac
 
 app=$1
