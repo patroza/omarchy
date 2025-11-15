@@ -15,6 +15,9 @@ trap exit_screensaver SIGINT SIGTERM SIGHUP SIGQUIT
 
 hyprctl keyword cursor:invisible true &>/dev/null
 
+# Set background to black
+echo -e "\e]11;#000000\e\\"
+
 while true; do
   effect=$(tte 2>&1 | grep -oP '{\K[^}]+' | tr ',' ' ' | tr ' ' '\n' | sed -n '/^beams$/,$p' | sort -u | shuf -n1)
   tte -i ~/.config/omarchy/branding/screensaver.txt \
