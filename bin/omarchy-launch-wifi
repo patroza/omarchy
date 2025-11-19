@@ -4,4 +4,4 @@
 # Attempts to unblock the wifi service first in case it should be been blocked.
 
 rfkill unblock wifi
-exec setsid omarchy-launch-or-focus com.omarchy.gazelle omarchy-launch-tui gazelle
+exec setsid omarchy-launch-or-focus com.omarchy.gazelle "omarchy-launch-tui gazelle"
