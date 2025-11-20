@@ -8,7 +8,7 @@ asdcontrol
 avahi
 bash-completion
 bat
-blueberry
+bluetui
 bolt
 brightnessctl
 btop
@@ -22,6 +22,7 @@ docker-buildx
 docker-compose
 dust
 evince
+exfatprogs
 expac
 eza
 fastfetch
