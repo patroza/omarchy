@@ -4,7 +4,7 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces", "mpris"],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
@@ -28,6 +28,7 @@
       "7": "7",
       "8": "8",
       "9": "9",
+      "10": "0",
       "active": "󱓻"
     },
     "persistent-workspaces": {
@@ -50,13 +51,13 @@
     "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
     "tooltip-format": "Omarchy update available",
     "signal": 7,
-    "interval": 21600
+    "interval": 3600
   },
 
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "xdg-terminal-exec btop"
+    "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
     "format": "{:L%A %H:%M}",
@@ -99,13 +100,14 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
-    "format-connected": "",
+    "format-connected": "󰂱",
+    "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "blueberry"
+    "on-click": "omarchy-launch-bluetooth"
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "xdg-terminal-exec --app-id=com.omarchy.Wiremix -e wiremix",
+    "on-click": "omarchy-launch-or-focus-tui wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
@@ -122,8 +124,24 @@
     },
     "modules": ["custom/expand-icon", "tray"]
   },
+  "mpris": {
+    "format": "   {player_icon} {status_icon} <i>{artist} - {title}</i>",
+    "player": "playerctld",
+    "max-length": 50,
+    "on-click": "playerctl play-pause",
+    "format-paused": "   {player_icon} {status_icon} {artist} - {title}",
+    "player-icons": {
+      "default": "",
+      "spotify": " ",
+      "mpv": " "
+    },
+    "status-icons": {
+      "paused": "⏸",
+      "playing": "▶"
+    }
+  },
   "custom/expand-icon": {
-    "format": "",
+    "format": "",
     "tooltip": false
   },
   "custom/screenrecording-indicator": {
@@ -134,6 +152,6 @@
   },
   "tray": {
     "icon-size": 12,
-    "spacing": 17
+    "spacing": 12
   }
 }

@@ -8,7 +8,8 @@ asdcontrol
 avahi
 bash-completion
 bat
-blueberry
+bluetui
+bolt
 brightnessctl
 btop
 clang
@@ -21,6 +22,7 @@ docker-buildx
 docker-compose
 dust
 evince
+exfatprogs
 expac
 eza
 fastfetch
@@ -32,6 +34,7 @@ ffmpegthumbnailer
 fontconfig
 fzf
 ghostty
+gazelle-tui
 github-cli
 gnome-calculator
 gnome-keyring
@@ -49,7 +52,6 @@ hyprlock
 hyprpicker
 hyprsunset
 imagemagick
-impala
 imv
 inetutils
 inxi
@@ -73,6 +75,7 @@ mariadb-libs
 mise
 mpv
 nautilus
+networkmanager
 gnome-disk-utility
 noto-fonts
 noto-fonts-cjk
