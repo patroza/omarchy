@@ -91,11 +91,15 @@ child:selected .item-box * {
 }
 
 .item-subtext {
+  font-size: 12px;
+  opacity: 0.5;
+}
+/* .item-subtext {
   font-size: 0px;
   min-height: 0px;
   margin: 0px;
   padding: 0px;
-}
+} */
 
 .item-image {
   margin-right: 14px;
