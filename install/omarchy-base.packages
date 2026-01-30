@@ -4,11 +4,13 @@
 1password-beta
 1password-cli
 aether
+alacritty
 asdcontrol
 avahi
 bash-completion
 bat
 bluetui
+bolt
 brightnessctl
 btop
 clang
@@ -19,6 +21,7 @@ cups-pdf
 docker
 docker-buildx
 docker-compose
+dotnet-runtime-9.0
 dust
 evince
 exfatprogs
@@ -33,6 +36,7 @@ ffmpegthumbnailer
 fontconfig
 fzf
 ghostty
+gazelle-tui
 github-cli
 gnome-calculator
 gnome-keyring
@@ -46,11 +50,11 @@ gvfs-smb
 hypridle
 hyprland
 hyprland-guiutils
+hyprland-preview-share-picker
 hyprlock
 hyprpicker
 hyprsunset
 imagemagick
-impala
 imv
 inetutils
 inxi
@@ -74,6 +78,7 @@ mariadb-libs
 mise
 mpv
 nautilus
+networkmanager
 gnome-disk-utility
 noto-fonts
 noto-fonts-cjk
@@ -86,6 +91,7 @@ obsidian
 omarchy-chromium
 omarchy-nvim
 omarchy-walker
+opencode
 pamixer
 pinta
 playerctl
