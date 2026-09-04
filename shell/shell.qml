@@ -7,6 +7,7 @@ import qs.Commons
 
 import "plugins/bar"
 import "services"
+import "services/ServiceLookup.js" as ServiceLookup
 
 ShellRoot {
   id: shell
@@ -273,7 +274,10 @@ ShellRoot {
   property var _services: ({})
 
   function serviceFor(pluginId) {
-    return _services[String(pluginId)] || null
+    var id = ServiceLookup.resolveServiceId(_services, pluginId, function(key) {
+      return pluginRegistry ? pluginRegistry.resolveEnabledId(key) : key
+    })
+    return id === "" ? null : _services[id]
   }
 
   function firstPartyServiceFor(pluginId) {
